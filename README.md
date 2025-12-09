@@ -4,6 +4,7 @@
 ├── pre-requisite.md
 ├── README.md
 ├── solution_document.md
+├── sample_scene.usd
 ├── src
 │   ├── requirements.txt
 │   └── yolo_node.py
