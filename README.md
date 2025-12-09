@@ -418,14 +418,3 @@ ros2 topic echo /yolov8/detections
 
 ---
 
-## **Done. Clean. Pass-ready.**
-
-If you want, I can now package this into:
-
-* a **README.md**
-* a **requirements.txt**
-* a folder structure for GitHub
-* and a polished **USD file description**
-
-Just tell me *“build repo structure”* and I’ll format the entire thing.
-
