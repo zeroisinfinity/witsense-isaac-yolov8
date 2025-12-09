@@ -8,7 +8,7 @@ Download the Isaac Sim Linux build from NVIDIA's official documentation:
 https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/quick-install.html
 ```
 
-**Screenshot:** `[TODO: Add download page screenshot]`
+**Screenshot:** `[./ss-witsense/link.png]`
 
 ---
 
