@@ -9,6 +9,7 @@ https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/quick-install.html
 ```
 
 **Google search:** ![link](./ss-witsense/link.png)
+---
 **tar file for linux:** ![tar file](./ss-witsense/website-official.png)
 ---
 
