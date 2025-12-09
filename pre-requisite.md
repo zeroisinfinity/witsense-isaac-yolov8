@@ -26,4 +26,7 @@
 | **TensorRT** | Latest compatible | `dpkg -l \| grep nvinfer` |
 | **Container Toolkit** | nvidia-container-toolkit | `docker run --rm --gpus all nvidia/cuda:12.2.0-base-ubuntu22.04 nvidia-smi` |
 
-
+---
+![1](./ss-witsense/1.png)
+![2](./ss-witsense/2.png)
+![3](./ss-witsense/3.png)
