@@ -185,9 +185,9 @@ ros2 topic list
 ros2 topic echo /sim/camera/rgb
 ```
 ---
-**ros-list:** !list](./ss-witsense/ros-list.png)
+**ros-list:** ![list](./ss-witsense/ros-list.png)
 ---
-**Image-byte:** ![link](./ss-witsense/image-byte.png)
+**Image-byte:** ![link](./ss-witsense/image-bytes.png)
 
 The feed was valid (`sensor_msgs/Image`).
 
