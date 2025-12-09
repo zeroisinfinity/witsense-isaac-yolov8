@@ -73,7 +73,9 @@ To verify successful installation:
 3. Verify ROS bridge functionality (covered in next section)
 
 **GUI:** ![GUI](./ss-witsense/isaac-sim/isaac-headless.png)
+---
 **sample_scene:** ![sample_scene](./ss-witsense/isaac-sim/isaac-headless.png)
+---
 **Action_graph:** ![action_graph](./ss-witsense/isaac-sim/isaac-headless.png)
 
 
@@ -104,6 +106,7 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-vision-msgs
 ```
 
 **Repo added:** ![REPO](./ss-witsense/isaac-ros-presetup.png)
+---
 **ROS-base:** ![ROS-BASE](./ss-witsense/isaac-roc-install.png)
 
 ## Isaac ROS Packages
