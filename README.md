@@ -1,5 +1,23 @@
 # Isaac Sim Installation & Setup Guide
+```
+.
+├── pre-requisite.md
+├── README.md
+├── solution_document.md
+├── src
+│   ├── requirements.txt
+│   └── yolo_node.py
+└── ss-witsense
+    ├── action-graph.png
+    ...
+    ├── readme
+    │   ├── isaac-sim
+    │   │   ├── Screenshot from 2025-12-09 00-34-03.png
+    │   │   ...
+   
 
+9 directories, 33 files
+```
 ## Installing NVIDIA Isaac Sim (Linux x86_64)
 
 ### 1. Download Isaac Sim
