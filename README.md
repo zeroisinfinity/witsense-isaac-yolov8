@@ -72,11 +72,11 @@ To verify successful installation:
 2. Check logs for any CUDA/GPU warnings
 3. Verify ROS bridge functionality (covered in next section)
 
-**GUI:** ![GUI](./ss-witsense/isaac-sim/isaac-headless.png)
+**GUI:** ![GUI](./ss-witsense/GUI.png)
 ---
-**sample_scene:** ![sample_scene](./ss-witsense/isaac-sim/isaac-headless.png)
+**Enable ros bridge:** ![ros bridge](./ss-witsense/enable-rosbridge.png)
 ---
-**Action_graph:** ![action_graph](./ss-witsense/isaac-sim/isaac-headless.png)
+**Action_graph:** ![action_graph](./ss-witsense/action-graph.png)
 
 
 ---
