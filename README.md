@@ -1,6 +1,6 @@
 # Isaac Sim Installation & Setup Guide
 ```
-.
+
 witsense-isaac-yolov8/
 │
 ├── pre-requisite.md
