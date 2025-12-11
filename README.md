@@ -1,23 +1,23 @@
 # Isaac Sim Installation & Setup Guide
 ```
 .
+witsense-isaac-yolov8/
+│
 ├── pre-requisite.md
 ├── README.md
 ├── solution_document.md
 ├── sample_scene.usd
-├── src
-│   ├── requirements.txt
-│   └── yolo_node.py
-└── ss-witsense
-    ├── action-graph.png
-    ...
-    ├── readme
-    │   ├── isaac-sim
-    │   │   ├── Screenshot from 2025-12-09 00-34-03.png
-    │   │   ...
-   
-
-9 directories, 33 files
+│
+├── src/
+│   ├── requirements.txt
+│   └── yolo_node.py
+│
+└── ss-witsense/
+    ├── setup-proof.png           # only ONE main screenshot
+    ├── ...
+    └── isaac-sim/
+        ├── sim-running.png       # only ONE isaac-sim screenshot
+        └── ...
 ```
 ## Installing NVIDIA Isaac Sim (Linux x86_64)
 
