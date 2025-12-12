@@ -2,22 +2,22 @@
 ```
 
 witsense-isaac-yolov8/
-│
 ├── pre-requisite.md
 ├── README.md
-├── solution_document.md
-├── sample_scene.usd
-│
-├── src/
-│   ├── requirements.txt
-│   └── yolo_node.py
-│
-└── ss-witsense/
-    ├── setup-proof.png           # only ONE main screenshot
-    ├── ...
-    └── isaac-sim/
-        ├── sim-running.png       # only ONE isaac-sim screenshot
-        └── ...
+├── simple_scene.usd
+├── src
+│   ├── camera.py
+│   ├── isaac_ros_yolov8.py
+│   └── requirements.txt
+├── ss-witsense
+│   ├── action-graph.png
+|    ...
+│   └── isaac-sim
+│       └── isaac-sim-ss.png
+|        ...
+├── YOLOv8 Detect.png
+└── yolov8n.pt
+
 ```
 ## Installing NVIDIA Isaac Sim (Linux x86_64)
 
