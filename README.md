@@ -24,7 +24,7 @@ witsense-isaac-yolov8/
 # A) - Installing NVIDIA Isaac Sim 
 
 ### 1. Download Isaac Sim
-Download the Isaac Sim Linux build from NVIDIA's official [Documentation](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/quick-install.html):
+Download the Isaac Sim Linux build from NVIDIA's official [Downloads](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/quick-install.html):
 ```
 https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/quick-install.html
 ```
