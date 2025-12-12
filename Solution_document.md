@@ -137,7 +137,7 @@ fps = self.frame_count / (time.time() - self.start_time)
 
 ## Summary
 
-**What Works:**
+**Works:**
 - ✅ Isaac Sim scene with camera
 - ✅ Action Graph publishing to ROS2
 - ✅ Real-time detection pipeline
