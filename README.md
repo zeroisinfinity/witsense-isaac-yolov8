@@ -96,7 +96,6 @@ To verify successful installation:
 
 # B) - Isaac ROS Installation
 
-## ROS 2 Jazzy Setup
 ### 1. Install the dependencies:
 ```bash
 sudo apt update && sudo apt install curl gnupg
@@ -118,6 +117,7 @@ grep -qxF "$s" $f || echo "$s" | sudo tee -a $f
 sudo apt-get update
 ```
 ---
+## ROS 2 Jazzy Setup
 ### 3.  Add ROS2 Repository
 ```bash
 sudo curl -s -o /usr/share/keyrings/ros-archive-keyring.gpg \
