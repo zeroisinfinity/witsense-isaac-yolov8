@@ -203,7 +203,7 @@ source /opt/ros/jazzy/setup.bash
 python3 camera.py
 ```
 ---
-### SINGLE Script to launch the program (*by claude and rest of steps decided by me*)
+### SINGLE Script to launch the program (*launch script is by claude and rest of steps decided by me*)
 ```bash
 chmod +x ./run_camera.sh
 ./run_camera.sh
