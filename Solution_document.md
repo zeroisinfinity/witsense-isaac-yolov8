@@ -50,7 +50,8 @@ I built an Action Graph in Isaac Sim with 3 nodes:
 ros2 topic list          # Shows /sim/camera/rgb
 ros2 topic echo /sim/camera/rgb  # Confirms image data flowing
 ```
-**ROS2 topics**: ![ros2](./ss-witsense/)
+**ROS2 topics**: ![ros2](./ss-witsense/ros-list.png)
+
 ### Detection Node Code (using CPU version of code with ultralytics's YOLOv8)
 
 **File:** `./src/camera.py`
@@ -79,8 +80,6 @@ ros2 topic echo /sim/camera/rgb  # Confirms image data flowing
 $ ros2 topic hz /sim/camera/rgb
 average rate: 30.045
 ```
----
-![ros-list.png](./ss-witsense/ros-list.png)
 ---
 ![image-bytes2.png](./ss-witsense/image-bytes2.png)
 ---
