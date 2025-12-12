@@ -130,7 +130,7 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
 ```
 ---
 ### 4. Install ROS2 Jazzy 
-### Option A: Minimal (What You Did - ~2GB)
+### Option A: Minimal (What I Did ~2GB)
 ```bash
 #THIS IS WHAT I DID (MINIMAL DUE TO SPACE CONSTRAINTS)
 sudo apt update 
@@ -146,7 +146,8 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-vision-msgs
 ---
 **Repo added:** ![REPO](./ss-witsense/isaac-ros-presetup.png)
 ---
-
+### 5 . Docker and isaac-ros-cli method for isolated env
+**Ros-cli**:![](./isaac-ros-cli.png)
 
 # C) - Python Dependencies - GPU [Solution](./src/isaac_ros_yolov8.py)
 
