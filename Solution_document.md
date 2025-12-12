@@ -108,7 +108,6 @@ Moving objects in Isaac Sim → Immediate update in OpenCV window → Proves ful
 
 **2. Publish Detection Results**
 ```python
-# Add to code:
 from vision_msgs.msg import Detection2DArray
 self.det_pub = self.create_publisher(Detection2DArray, '/detections', 10)
 ```
@@ -116,7 +115,6 @@ Makes detections available to other ROS nodes.
 
 **3. Add Performance Metrics**
 ```python
-# Track FPS
 self.frame_count = 0
 self.start_time = time.time()
 fps = self.frame_count / (time.time() - self.start_time)
