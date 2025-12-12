@@ -22,7 +22,11 @@ Isaac Sim Camera → Action Graph → ROS2 Topic → Python Detection Node → R
 2. **Action Graph** - Connects Isaac Sim camera to ROS2 without writing simulation code
 3. **ROS2 Bridge** - Industry-standard way to get sensor data out of simulation
 4. **Python Node** - Subscribes to camera images and runs YOLO detection
-
+---
+**Action Graph**: ![action graph](./ss-witsense/action-graph.png)
+---
+**Extensions**: ![ROS2 Bridge](./ss-witsense/enable-rosbridge.png)
+---
 This architecture mirrors real robotics workflows where you swap Isaac Sim for a real robot camera.
 
 ---
