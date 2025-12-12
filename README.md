@@ -179,10 +179,41 @@ python3 -m pip install tensorrt pycuda opencv-python numpy
 | `opencv-python` | Image processing and ROS2 image conversion |
 | `numpy` | Numerical array operations for image manipulation |
 
+
 ---
 
+### How to use my Code
+
+### Prerequisites
+```bash
+# Install dependencies
+pip3 install ultralytics opencv-python cv-bridge
+sudo apt install ros-jazzy-cv-bridge
+```
 **Python dependencies to work on CPU :** ![py-dep](./ss-witsense/py-dep-list.png)
 
+### Step 1: Launch Isaac Sim
+```bash
+cd ~/isaac-sim
+./isaac-sim.sh
+# Open simple_scene.usd
+# Press Play
+```
 
----
+### Step 2: Run Detection Node
+```bash
+# Make sure ROS can see Isaac Sim topics
+export ROS_DOMAIN_ID=0
+source /opt/ros/jazzy/setup.bash
+python3 camera.py
+```
+
+### Expected Output
+```
+[INFO] YOLOv8 Node Started - Subscribing to /sim/camera/rgb
+```
+![]()
+![]()
+![]()
+OpenCV window shows live camera feed with potential detections.
 
