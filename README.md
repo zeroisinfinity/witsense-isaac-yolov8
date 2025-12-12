@@ -147,7 +147,7 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-vision-msgs
 **Repo added:** ![REPO](./ss-witsense/isaac-ros-presetup.png)
 ---
 ### 5 . Docker and isaac-ros-cli method for isolated env
-**Ros-cli**:![](./isaac-ros-cli.png)
+**Ros-cli**:![](./ss-witsense/isaac-ros-cli.png)
 
 # C) - Python Dependencies - GPU [Solution](./src/isaac_ros_yolov8.py)
 
