@@ -1,0 +1,24 @@
+rclpy>=3.3.0
+sensor-msgs>=4.2.0
+vision-msgs>=4.1.0
+
+
+opencv-python>=4.8.0
+cv-bridge>=3.4.0
+
+
+torch>=2.1.0+cu121
+torchvision>=0.16.0+cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+
+tensorrt>=8.6.0
+pycuda>=2022.2
+
+
+onnx>=1.15.0
+onnxruntime-gpu>=1.16.0
+
+
+numpy>=1.24.0
+Pillow>=10.0.0
