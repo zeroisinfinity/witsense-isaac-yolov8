@@ -145,7 +145,7 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-vision-msgs
 ---
 **Repo added:** ![REPO](./ss-witsense/isaac-ros-presetup.png)
 ---
-**ROS-base:** ![ROS-BASE](./ss-witsense/isaac-roc-install.png)
+**ROS-base:** ![ROS_BASE](./ss-witsense/isaac-roc-install.png)
 
 ---
 
