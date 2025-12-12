@@ -148,7 +148,7 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-vision-msgs
 ---
 
 
-# Python Dependencies - GPU Solution
+# Python Dependencies - GPU [Solution](./src/isaac_ros_yolov8.py)
 
 
 ### 1. Install Required Packages
