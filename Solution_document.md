@@ -148,5 +148,4 @@ fps = self.frame_count / (time.time() - self.start_time)
 - Modular design (sim ↔ detection separated)
 - Easy to extend to real robots
 
-**Key Achievement:**
-Built complete sim-to-detection pipeline in one night with working camera feed and real-time processing at 30 FPS.
+
