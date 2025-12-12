@@ -19,7 +19,7 @@ witsense-isaac-yolov8/
 └── yolov8n.pt
 
 ```
-## Installing NVIDIA Isaac Sim 
+## A) - Installing NVIDIA Isaac Sim 
 
 ### 1. Download Isaac Sim
 Download the Isaac Sim Linux build from NVIDIA's official documentation:
@@ -100,7 +100,7 @@ To verify successful installation:
 
 ---
 
-# Isaac ROS Installation
+# B) - Isaac ROS Installation
 
 ## ROS 2 Jazzy Setup
 ```bash
@@ -141,7 +141,7 @@ sudo apt-get install -y \
 
 ---
 
-# Python Dependencies
+# C) - Python Dependencies
 
 ## YOLOv8 Processing Node
 
