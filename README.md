@@ -194,7 +194,7 @@ cd ~/isaac-sim
 # Open simple_scene.usd
 # Press Play
 ```
-
+---
 ### Step 2: Run Detection Node
 ```bash
 # Make sure ROS can see Isaac Sim topics
@@ -202,6 +202,7 @@ export ROS_DOMAIN_ID=0
 source /opt/ros/jazzy/setup.bash
 python3 camera.py
 ```
+---
 ### SINGLE Script to launch the program
 ```bash
 chmod +x ./run_camera.sh
