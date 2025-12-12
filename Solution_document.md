@@ -25,7 +25,6 @@ Isaac Sim Camera → Action Graph → ROS2 Topic → Python Detection Node → R
 ---
 **Extensions**: ![ROS2 Bridge](./ss-witsense/enable-rosbridge.png)
 ---
-This architecture mirrors real robotics workflows where you swap Isaac Sim for a real robot camera.
 
 ---
 
