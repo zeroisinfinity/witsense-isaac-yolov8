@@ -2,8 +2,8 @@
 
 ## Project: Real-time Object Detection Pipeline detection on a simulated camera feed in Isaac Sim.
 ---
-1 . *Code* - Generated using Claude-sonnet 4.5. 
-2 . *Entire pipeline + installations* - Completed by me.
+1) **Code** - *Generated using Claude-sonnet 4.5.* 
+2) **Entire pipeline + installations** - *Completed by me.*
 ---
 ## 1. My Approach
 
