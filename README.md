@@ -182,7 +182,7 @@ python3 -m pip install tensorrt pycuda opencv-python numpy
 
 ---
 
-### How to use my Code
+### C) - How to use my Code
 
 ### Prerequisites
 ```bash
