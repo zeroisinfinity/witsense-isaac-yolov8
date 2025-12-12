@@ -16,7 +16,7 @@ I created a complete pipeline that takes a live camera feed from Isaac Sim and r
 Isaac Sim Camera → Action Graph → ROS2 Topic → Python Detection Node → Results
 ```
 
-### Why This Approach?
+### Justifying Approach?
 
 1. **Isaac Sim Scene** - Simple scene with cylinder and sphere to test camera feed
 2. **Action Graph** - Connects Isaac Sim camera to ROS2 without writing simulation code
@@ -50,63 +50,10 @@ ros2 topic list          # Shows /sim/camera/rgb
 ros2 topic echo /sim/camera/rgb  # Confirms image data flowing
 ```
 
-### Detection Node Code
+### Detection Node Code (using CPU version of code with ultralytics's YOLOv8)
 
-**File:** `yoyo.py`
+**File:** `./src/camera.py`
 
-```python
-import rclpy
-from rclpy.node import Node
-from sensor_msgs.msg import Image
-from cv_bridge import CvBridge
-from ultralytics import YOLO
-import cv2
-
-class YoloDetectorNode(Node):
-    def __init__(self):
-        super().__init__('yolo_detector_node')
-        
-        # Subscribe to Isaac Sim camera
-        self.subscription = self.create_subscription(
-            Image,
-            '/sim/camera/rgb',
-            self.image_callback,
-            10)
-        
-        # Initialize
-        self.bridge = CvBridge()
-        self.model = YOLO('yolov8n.pt')
-        
-        self.get_logger().info('YOLOv8 Node Started')
-    
-    def image_callback(self, msg):
-        # Convert ROS Image to OpenCV format
-        cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-        
-        # Run YOLO detection
-        results = self.model.predict(cv_image, device='cpu', verbose=False)
-        
-        # Draw bounding boxes
-        annotated_frame = results[0].plot()
-        
-        # Display
-        cv2.imshow('YOLOv8 Detections', annotated_frame)
-        cv2.waitKey(1)
-        
-        # Log detections
-        for box in results[0].boxes:
-            cls = int(box.cls[0])
-            conf = float(box.conf[0])
-            label = self.model.names[cls]
-            self.get_logger().info(f'Detected: {label} ({conf:.2f})')
-
-def main(args=None):
-    rclpy.init(args=args)
-    node = YoloDetectorNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
-```
 
 **How it works:**
 
@@ -124,23 +71,17 @@ def main(args=None):
 
 ---
 
-## 3. How I Know It Works
+## 3. Proof It Works
 
 ### ✅ ROS2 Integration Verified
 ```bash
 $ ros2 topic hz /sim/camera/rgb
 average rate: 30.045
 ```
+![]()
+---
 Camera publishes at expected 30 FPS.
 
-### ✅ Image Data Validated
-```bash
-$ ros2 topic echo /sim/camera/rgb --no-arr
-height: 720
-width: 1280
-encoding: rgb8
-```
-Correct format and dimensions.
 
 ### ✅ Pipeline Processing
 - OpenCV window displays live camera feed
@@ -149,11 +90,6 @@ Correct format and dimensions.
 
 ### ✅ End-to-End Test
 Moving objects in Isaac Sim → Immediate update in OpenCV window → Proves full pipeline works.
-
-**Note:** Cylinder/sphere don't trigger detections because they're not in COCO dataset (80 classes like person, car, bottle). But the **pipeline processes correctly** - proven by:
-- Live image display
-- No errors
-- Frame processing at 30 FPS
 
 ---
 
@@ -186,54 +122,12 @@ fps = self.frame_count / (time.time() - self.start_time)
 
 **1. Switch to isaac_ros_yolov8**
 - Uses TensorRT for GPU acceleration
-- 3-5× faster inference
-- Requires CUDA + TensorRT setup
 
 **2. Multi-Camera Support**
 - Subscribe to multiple camera topics
-- Run detections on all streams
-- Useful for 360° robot vision
 
 **3. Add Object Tracking**
-- Implement SORT or DeepSORT
 - Track objects across frames
-- Get object trajectories
-
-**4. 3D Detection**
-- Use depth camera in Isaac Sim
-- Combine RGB + depth for 3D bounding boxes
-- Get real-world object positions
-
----
-
-## 5. Running the Code
-
-### Prerequisites
-```bash
-# Install dependencies
-pip3 install ultralytics opencv-python cv-bridge
-sudo apt install ros-jazzy-cv-bridge
-```
-
-### Step 1: Launch Isaac Sim
-```bash
-cd ~/isaac-sim
-./isaac-sim.sh
-# Open simple_scene.usd
-# Press Play
-```
-
-### Step 2: Run Detection Node
-```bash
-source /opt/ros/jazzy/setup.bash
-python3 yoyo.py
-```
-
-### Expected Output
-```
-[INFO] YOLOv8 Node Started - Subscribing to /sim/camera/rgb
-```
-OpenCV window shows live camera feed with potential detections.
 
 ---
 
