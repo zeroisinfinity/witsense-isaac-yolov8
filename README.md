@@ -214,13 +214,13 @@ chmod +x ./run_camera.sh
 [INFO] YOLOv8 Node Started - Subscribing to /sim/camera/rgb
 ```
 ---
-**camera.py output :**![output](./ss-witsense/output.png)
+**camera.py output:**![output](./ss-witsense/output.png)
 ---
-**output image : **![output-img](./YOLOv8_Detect.png)
+**output image: **![output-img](./YOLOv8_Detect.png)
 ---
-**Image proof in Isaac-sim :**![proof](./ss-witsense/image-publishing.png)
+**Image proof in Isaac-sim:**![proof](./ss-witsense/image-publishing.png)
 ---
-**Camera angle :**![angle](./ss-witsense/camera-angle.png)
+**Camera angle:**![angle](./ss-witsense/camera-angle.png)
 ---
 OpenCV window shows live camera feed with potential detections.
 
