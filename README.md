@@ -145,9 +145,7 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-vision-msgs
 ---
 **Repo added:** ![REPO](./ss-witsense/isaac-ros-presetup.png)
 ---
-**ROS-base:** ![ROS_BASE](./ss-witsense/isaac-roc-install.png)
 
----
 
 # Python Dependencies - GPU Solution
 
@@ -206,8 +204,8 @@ python3 camera.py
 ```
 [INFO] YOLOv8 Node Started - Subscribing to /sim/camera/rgb
 ```
-![]()
-![]()
-![]()
+****![]()
+****![]()
+****![]()
 OpenCV window shows live camera feed with potential detections.
 
