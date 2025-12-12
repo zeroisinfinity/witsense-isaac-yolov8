@@ -148,7 +148,7 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-vision-msgs
 ---
 
 
-# Python Dependencies - GPU [Solution](./src/isaac_ros_yolov8.py)
+# C) - Python Dependencies - GPU [Solution](./src/isaac_ros_yolov8.py)
 
 
 ### 1. Install Required Packages
@@ -175,7 +175,7 @@ python3 -m pip install tensorrt pycuda opencv-python numpy
 
 ---
 
-# C) - How to use my Code
+# D) - How to use my Code
 
 ### Prerequisites
 ```bash
