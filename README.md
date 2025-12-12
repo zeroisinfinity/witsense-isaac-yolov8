@@ -216,7 +216,7 @@ chmod +x ./run_camera.sh
 ---
 **camera.py output:**![output](./ss-witsense/output.png)
 ---
-**output image: **![output-img](./YOLOv8_Detect.png)
+**output image:**![output-img](./YOLOv8_Detect.png)
 ---
 **Image proof in Isaac-sim:**![proof](./ss-witsense/image-publishing.png)
 ---
