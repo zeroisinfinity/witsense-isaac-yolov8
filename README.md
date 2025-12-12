@@ -91,7 +91,7 @@ To verify successful installation:
 2. Check logs for any CUDA/GPU warnings
 3. Verify ROS bridge functionality
    
-**GUI:** ![GUI](./ss-witsense/GUI.png)
+**GUI(MY LAPTOP):** ![GUI](./ss-witsense/GUI.png)
 ---
 
 # B) - Isaac ROS Installation
