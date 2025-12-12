@@ -3,21 +3,22 @@
 ```
 
 witsense-isaac-yolov8/
-├── pre-requisite.md
-├── README.md
-├── scenes
-│   └── simple_scene.usd
-├── Solution_document.md
-├── src
-│   ├── camera.py
-│   ├── isaac_ros_yolov8.py
-│   └── requirements.txt
-├── ss-witsense
-│   ├── action-graph.png
-│   └── isaac-sim
-│       └── isaac-sim-ss.png
-├── YOLOv8 Detect.png
-└── yolov8n.pt
+├── 📄 pre-requisite.md
+├── 📄 README.md
+├── 📁 scenes
+│   └── 📄 simple_scene.usd
+├── 📄 Solution_document.md
+├── 📁 src
+│   ├── 📄 camera.py
+│   ├── 📄 isaac_ros_yolov8.py
+│   ├── 📄 requirements-cpu.txt
+│   └── 📄 requirements-gpu.txt
+├── 📁 ss-witsense
+│   ├── 📄 action-graph.png
+│   └── 📁 isaac-sim
+│       └── 📄 isaac-sim-ss.png
+├── 📄 YOLOv8 Detect.png
+└── 📄 yolov8n.pt
 
 ```
 # A) - Installing NVIDIA Isaac Sim 
