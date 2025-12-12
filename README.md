@@ -19,7 +19,7 @@ witsense-isaac-yolov8/
 └── yolov8n.pt
 
 ```
-## Installing NVIDIA Isaac Sim (Linux x86_64)
+## Installing NVIDIA Isaac Sim 
 
 ### 1. Download Isaac Sim
 Download the Isaac Sim Linux build from NVIDIA's official documentation:
