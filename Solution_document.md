@@ -1,8 +1,6 @@
 # Solution Document: YOLOv8 Object Detection in Isaac Sim
 
 **Project:** Real-time Object Detection Pipeline in Isaac-sim
-**Date:** December 2025
-
 ---
 
 ## 1. My Approach
