@@ -16,7 +16,7 @@ I created a complete pipeline that takes a live camera feed from Isaac Sim and r
 Isaac Sim Camera → Action Graph → ROS2 Topic → Python Detection Node → Results
 ```
 
-### Justifying Approach?
+### Justifying Approach:
 
 1. **Isaac Sim Scene** - Simple scene with cylinder and sphere to test camera feed
 2. **Action Graph** - Connects Isaac Sim camera to ROS2 without writing simulation code
