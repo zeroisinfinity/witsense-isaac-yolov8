@@ -93,12 +93,6 @@ To verify successful installation:
    
 **GUI:** ![GUI](./ss-witsense/GUI.png)
 ---
-**Enable ros bridge:** ![ros bridge](./ss-witsense/enable-rosbridge.png)
----
-**Action_graph:** ![action_graph](./ss-witsense/action-graph.png)
-
-
----
 
 # B) - Isaac ROS Installation
 
