@@ -29,7 +29,7 @@ https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/quick-install.html
 
 **Google search:** ![link](./ss-witsense/link.png)
 ---
-**tar file for linux(x68_84):** ![tar file](./ss-witsense/website-official.png)
+**tar file for linux(x86_64):** ![tar file](./ss-witsense/website-official.png)
 ---
 
 ### 2. Create Installation Directory(optional)
