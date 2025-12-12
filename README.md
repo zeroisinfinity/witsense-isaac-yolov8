@@ -89,8 +89,8 @@ chmod +x ~/isaac-sim/isaac-sim-standalone-5.1.0-linux-x86_64/isaac-sim.sh
 To verify successful installation:
 1. Isaac Sim UI should launch without errors
 2. Check logs for any CUDA/GPU warnings
-3. Verify ROS bridge functionality (covered in next section)
-
+3. Verify ROS bridge functionality
+   
 **GUI:** ![GUI](./ss-witsense/GUI.png)
 ---
 **Enable ros bridge:** ![ros bridge](./ss-witsense/enable-rosbridge.png)
