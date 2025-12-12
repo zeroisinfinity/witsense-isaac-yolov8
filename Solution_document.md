@@ -55,7 +55,7 @@ ros2 topic echo /sim/camera/rgb  # Confirms image data flowing
 
 ### Detection Node Code (using CPU version of code with ultralytics's YOLOv8)
 
-**File:** `./src/camera.py`
+**File:** [camera.py](./src/camera.py) 
 
 
 **How it works:**
