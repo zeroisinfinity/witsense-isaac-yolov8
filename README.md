@@ -178,7 +178,7 @@ python3 -m pip install tensorrt pycuda opencv-python numpy
 ---
 
 # D) - How to use my [Code](./src/camera.py)
-
+*Note - I have implemented a CPU workraround for this assignment using YOLOv nano model*
 ### Prerequisites
 ```bash
 # Install dependencies
@@ -202,7 +202,12 @@ export ROS_DOMAIN_ID=0
 source /opt/ros/jazzy/setup.bash
 python3 camera.py
 ```
-
+### SINGLE Script to launch the program
+```bash
+chmod +x ./run_camera.sh
+./run_camera.sh
+```
+---
 ### Expected Output
 ```
 [INFO] YOLOv8 Node Started - Subscribing to /sim/camera/rgb
