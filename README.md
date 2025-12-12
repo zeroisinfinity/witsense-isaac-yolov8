@@ -5,17 +5,17 @@
 witsense-isaac-yolov8/
 ├── pre-requisite.md
 ├── README.md
-├── simple_scene.usd
+├── scenes
+│   └── simple_scene.usd
+├── Solution_document.md
 ├── src
 │   ├── camera.py
 │   ├── isaac_ros_yolov8.py
 │   └── requirements.txt
 ├── ss-witsense
 │   ├── action-graph.png
-|    ...
 │   └── isaac-sim
 │       └── isaac-sim-ss.png
-|        ...
 ├── YOLOv8 Detect.png
 └── yolov8n.pt
 
