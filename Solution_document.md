@@ -38,19 +38,19 @@ I built an Action Graph in Isaac Sim with 3 nodes:
 [On Playback Tick] → [Isaac Create Render Product] → [ROS2 Camera Helper]
 ```
 
-**What each does:**
+**Work of each node:**
 - **On Playback Tick**: Triggers every simulation frame (30 FPS)
 - **Isaac Create Render Product**: Captures what the camera sees
 - **ROS2 Camera Helper**: Publishes image to `/sim/camera/rgb` topic
 
-**Why this works:** Action Graphs are Isaac Sim's visual programming tool. No Python needed for the simulation side.
+**Why beneficial:** Action Graphs are Isaac Sim's visual programming tool. No Python needed for the simulation side.
 
 **Validation:**
 ```bash
 ros2 topic list          # Shows /sim/camera/rgb
 ros2 topic echo /sim/camera/rgb  # Confirms image data flowing
 ```
-
+**ROS2 topics**: ![ros2](./ss-witsense/)
 ### Detection Node Code (using CPU version of code with ultralytics's YOLOv8)
 
 **File:** `./src/camera.py`
@@ -79,7 +79,10 @@ ros2 topic echo /sim/camera/rgb  # Confirms image data flowing
 $ ros2 topic hz /sim/camera/rgb
 average rate: 30.045
 ```
-![]()
+---
+![ros-list.png](./ss-witsense/ros-list.png)
+---
+![image-bytes2.png](./ss-witsense/image-bytes2.png)
 ---
 Camera publishes at expected 30 FPS.
 
